@@ -1,28 +1,35 @@
 {
-  "name": "hw",
+  "name": "reactjs01",
   "version": "1.0.0",
-  "description": "01. Typescript (часть 1)",
-  "main": "index.js",
+  "description": "",
+  "main": "./src/index.ts",
   "scripts": {
-    "start": "webpack-dev-server --mode development --hot --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "start": "webpack start",
+    "build": "webpack build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OraUser/ReactJS01.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@babel/polyfill": "^7.12.1",
-    "create-react-app": "^1.2.1",
-    "typescript": "^4.7.4"
+  "bugs": {
+    "url": "https://github.com/OraUser/ReactJS01/issues"
   },
+  "homepage": "https://github.com/OraUser/ReactJS01#readme",
   "devDependencies": {
-    "@babel/cli": "^7.18.6",
-    "@babel/core": "^7.18.6",
-    "@babel/preset-env": "^7.18.6",
+    "@babel/cli": "^7.18.9",
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
     "@babel/preset-react": "^7.18.6",
+    "@types/jest": "^28.1.6",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^3.10.1",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.5",
-    "eslint": "^8.19.0",
+    "eslint": "^8.20.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
@@ -31,18 +38,23 @@
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "html-webpack-plugin": "^5.5.0",
-    "jest": "^28.1.2",
+    "jest": "^28.1.3",
     "prettier": "2.7.1",
+    "ts-jest": "^28.0.7",
+    "ts-loader": "^9.3.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/OraUser/ReactJS01.git"
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
   },
-  "bugs": {
-    "url": "https://github.com/OraUser/ReactJS01/issues"
-  },
-  "homepage": "https://github.com/OraUser/ReactJS01#readme"
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "verbose": true,
+    "automock": true
+  }
 }
